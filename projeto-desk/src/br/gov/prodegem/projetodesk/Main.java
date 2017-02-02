@@ -8,5 +8,6 @@ public class Main {
 		System.out.println("Lero-lero");
 		System.out.println("Batatinha");
 		System.out.println("Bola");
+		System.out.println("Pedra");
 	}
 }	
