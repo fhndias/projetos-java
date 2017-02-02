@@ -8,5 +8,6 @@ public class Main {
 		System.out.println("Linha 4");
 		System.out.println("Linha 5");
 		System.out.println("Linha 6");
+		System.out.println("Linha 8");
 	}
 }	
