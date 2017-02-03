@@ -8,6 +8,8 @@ public class Main {
 		exibirMensagem4();
 		exibirMensagem5();
 		exibirMensagem6();
+		exibirMensagem7();
+		exibirMensagem8();
 	}
 	
 	private static void exibirMensagem1() {
