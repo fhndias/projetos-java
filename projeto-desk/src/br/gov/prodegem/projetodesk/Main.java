@@ -10,5 +10,10 @@ public class Main {
 		System.out.println("Linha 6");
 		System.out.println("Linha 7");
 		System.out.println("Linha 8");
+		exibirMensagem();
+	}
+	
+	private static String exibirMensagem() {
+		System.out.println("Linha 9");
 	}
 }	
