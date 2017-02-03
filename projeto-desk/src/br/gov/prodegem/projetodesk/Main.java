@@ -14,6 +14,7 @@ public class Main {
 		exibirMensagem1();
 		exibirMensagem2();
 		exibirMensagem3();
+		exibirMensagem4();
 	}
 	
 	private static void exibirMensagem1() {
@@ -27,5 +28,9 @@ public class Main {
 	
 	private static void exibirMensagem3() {
 		System.out.println("Linha 12");
+	}
+	
+	private static void exibirMensagem4() {
+		System.out.println("Linha 13");
 	}
 }	
