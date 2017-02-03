@@ -13,6 +13,7 @@ public class Main {
 		System.out.println("Linha 9");
 		exibirMensagem();
 		exibirMensagem2();
+		exibirMensagem4();
 	}
 	
 	private static void exibirMensagem() {
@@ -21,5 +22,9 @@ public class Main {
 	
 	private static void exibirMensagem2() {
 		System.out.println("Linha 11");
+	}
+	
+	private static void exibirMensagem4() {
+		System.out.println("Linha 13");
 	}
 }	
