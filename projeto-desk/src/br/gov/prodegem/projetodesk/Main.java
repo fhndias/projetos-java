@@ -1,16 +1,7 @@
 package br.gov.prodegem.projetodesk;
 
 public class Main {
-	public static void main(String[] args) {		
-		System.out.println("Linha 1");
-		System.out.println("Linha 2");
-		System.out.println("Linha 3");
-		System.out.println("Linha 4");
-		System.out.println("Linha 5");
-		System.out.println("Linha 6");
-		System.out.println("Linha 7");
-		System.out.println("Linha 8");
-		System.out.println("Linha 9");
+	public static void main(String[] args) {			
 		exibirMensagem1();
 		exibirMensagem2();
 		exibirMensagem3();
@@ -42,5 +33,13 @@ public class Main {
 	
 	private static void exibirMensagem6() {
 		System.out.println("Linha 15");
+	}
+	
+	private static void exibirMensagem7() {
+		System.out.println("Linha 16");
+	}	
+	
+	private static void exibirMensagem8() {
+		System.out.println("Linha 17");
 	}
 }	
