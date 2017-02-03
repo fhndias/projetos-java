@@ -11,16 +11,21 @@ public class Main {
 		System.out.println("Linha 7");
 		System.out.println("Linha 8");
 		System.out.println("Linha 9");
-		exibirMensagem();
+		exibirMensagem1();
 		exibirMensagem2();
+		exibirMensagem3();
 	}
 	
-	private static void exibirMensagem() {
+	private static void exibirMensagem1() {
 		System.out.println("Linha 10");
 	}
 	
 	
 	private static void exibirMensagem2() {
 		System.out.println("Linha 11");
+	}
+	
+	private static void exibirMensagem3() {
+		System.out.println("Linha 12");
 	}
 }	
