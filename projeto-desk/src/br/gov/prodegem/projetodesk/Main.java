@@ -10,6 +10,10 @@ public class Main {
 		System.out.println("Linha 6");
 		System.out.println("Linha 7");
 		System.out.println("Linha 8");
-		System.out.println("Linha 9");
+		exibirMensagem();
+	}
+	
+	private static void exibirMensagem() {
+		System.out.println("Linha 10");
 	}
 }	
