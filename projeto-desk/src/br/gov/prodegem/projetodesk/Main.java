@@ -13,7 +13,7 @@ public class Main {
 		exibirMensagem();
 	}
 	
-	private static String exibirMensagem() {
+	private static void exibirMensagem() {
 		System.out.println("Linha 10");
 	}
 }	
