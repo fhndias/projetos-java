@@ -12,10 +12,15 @@ public class Main {
 		System.out.println("Linha 8");
 		System.out.println("Linha 9");
 		exibirMensagem();
+		exibirMensagem2();
 	}
 	
 	private static void exibirMensagem() {
 		System.out.println("Linha 10");
 	}
 	
+	
+	private static void exibirMensagem2() {
+		System.out.println("Linha 11");
+	}
 }	
