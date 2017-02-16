@@ -1,12 +1,11 @@
 package br.gov.prodegem.projetodesk.entidades;
 
-import java.util.Date;
 
 public class Cliente {
 	private Long id;
 	private String cpf;
 	private String nome;
-	private Date dataDeAniversario;
+	private String dataDeAniversario;
 	private String endereco;
 	
 	public Long getId() {
@@ -33,11 +32,11 @@ public class Cliente {
 		this.nome = nome;
 	}
 	
-	public Date getDataDeAniversario() {
+	public String getDataDeAniversario() {
 		return dataDeAniversario;
 	}
 	
-	public void setDataDeAniversario(Date dataDeAniversario) {
+	public void setDataDeAniversario(String dataDeAniversario) {
 		this.dataDeAniversario = dataDeAniversario;
 	}
 	
