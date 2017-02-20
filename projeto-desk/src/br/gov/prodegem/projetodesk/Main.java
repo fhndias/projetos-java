@@ -7,24 +7,30 @@ import br.gov.prodegem.projetodesk.entidades.Cliente;
 import br.gov.prodegem.projetodesk.entidades.Carro;
 
 public class Main {
-	public static void main(String[] args) {	
-		Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {		
+		String opcao = "";
 		
-		System.out.println("+=================== Meu Sistema ===================+");
-		System.out.println("=              1 - Cadastro de Cliente              =");
-		System.out.println("=              2 - Cadastro de Carro                =");
-		System.out.println("+===================================================+");
-		System.out.println("Informe a opção: ");
-		
-		String opcao = scanner.nextLine();
-		
-		if (opcao.equals("1")) {
-			cadastroDeCliente();
+		while (!opcao.equals("3")) {
+			System.out.println("+=================== Meu Sistema ===================+");
+			System.out.println("=              1 - Cadastro de Cliente              =");
+			System.out.println("=              2 - Cadastro de Carro                =");
+			System.out.println("=              3 - Sair                             =");
+			System.out.println("+===================================================+");
+			System.out.println("Informe a opção: ");			
+			
+			Scanner scanner = new Scanner(System.in);
+ 	        opcao = scanner.nextLine();
+ 	        
+			
+			if (opcao.equals("1")) {
+				cadastroDeCliente();
+			} else if (opcao.equals("2")) {
+				cadastroDeCarro();	
+			}
+			
+			scanner.close();
 		}
 		
-		cadastroDeCarro();
-		
-		scanner.close();
 	}
 	
 	private static void cadastroDeCliente() {
