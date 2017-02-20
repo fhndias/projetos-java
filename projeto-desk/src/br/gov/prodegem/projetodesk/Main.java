@@ -5,7 +5,11 @@ import java.util.Scanner;
 import br.gov.prodegem.projetodesk.entidades.Carro;
 
 public class Main {
-	public static void main(String[] args) {			
+	public static void main(String[] args) {
+		cadastroDeCarro();
+	}
+	
+	private static void cadastroDeCarro() {
 		System.out.println("========== Cadastro de Carro ==========");
 		Scanner scanner = new Scanner(System.in);
 		
@@ -37,6 +41,5 @@ public class Main {
 		
 		
 		scanner.close();
-		
 	}
 }	
