@@ -5,7 +5,25 @@ import java.util.Scanner;
 import br.gov.prodegem.projetodesk.entidades.Cliente;
 
 public class Main {
-	public static void main(String[] args) {			
+	public static void main(String[] args) {	
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("+=================== Meu Sistema ===================+");
+		System.out.println("=              1 - Cadastro de Cliente              =");
+		System.out.println("=              2 - Cadastro de Carro                =");
+		System.out.println("+===================================================+");
+		System.out.println("Informe a opção: ");
+		
+		String opcao = scanner.nextLine();
+		
+		if (opcao.equals("1")) {
+			cadastroDeCliente();
+		}
+		
+		scanner.close();
+	}
+	
+	private static void cadastroDeCliente() {
 		System.out.println("========== Cadastro de Cliente ==========");
 		Scanner scanner = new Scanner(System.in);
 		
