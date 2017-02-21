@@ -5,7 +5,7 @@ public class Cliente {
 	private Long id;
 	private String cpf;
 	private String nome;
-	private String dataDeAniversario;
+	private String dataDeNascimento;
 	private String endereco;
 	
 	public Long getId() {
@@ -32,12 +32,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 	
-	public String getDataDeAniversario() {
-		return dataDeAniversario;
+	public String getDataDeNascimento() {
+		return dataDeNascimento;
 	}
 	
-	public void setDataDeAniversario(String dataDeAniversario) {
-		this.dataDeAniversario = dataDeAniversario;
+	public void setDataDeNascimento(String dataDeAniversario) {
+		this.dataDeNascimento = dataDeAniversario;
 	}
 	
 	public String getEndereco() {
