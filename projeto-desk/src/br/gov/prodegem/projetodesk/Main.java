@@ -5,9 +5,10 @@ import java.util.Scanner;
 import br.gov.prodegem.projetodesk.entidades.Cliente;
 
 public class Main {
+	private static Scanner scanner = new Scanner(System.in);
+	
 	public static void main(String[] args) {			
-		String opcao = "0";
-		Scanner scanner = new Scanner(System.in);
+		String opcao = "0";		
 		
 		while (!opcao.equals("5")) {
 			System.out.println("+=================== Meu Sistema ===================+");
@@ -38,7 +39,6 @@ public class Main {
 	
 	private static void cadastroDeCliente() {
 		System.out.println("========== Cadastro de Cliente ==========");
-		Scanner scanner = new Scanner(System.in);
 		
 		Cliente cliente = new Cliente();
 		cliente.setId(1L);
@@ -65,9 +65,7 @@ public class Main {
 		System.out.println("CPF: " + cliente.getCpf());
 		System.out.println("Data de nascimento: " + cliente.getDataDeNascimento());
 		System.out.println("Endereço: " + cliente.getEndereco());
-		
-	
-		scanner.close();
+		System.out.println("");
 	}
 	
 	private static void cadastroDeCarro() {
