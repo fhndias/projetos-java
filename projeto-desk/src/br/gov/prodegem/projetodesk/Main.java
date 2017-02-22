@@ -3,6 +3,7 @@ package br.gov.prodegem.projetodesk;
 import java.util.Scanner;
 
 import br.gov.prodegem.projetodesk.entidades.Cliente;
+import br.gov.prodegem.projetodesk.persistencia.ClienteDAO;
 
 public class Main {
 	private static Scanner scanner = new Scanner(System.in);
@@ -41,7 +42,6 @@ public class Main {
 		System.out.println("========== Cadastro de Cliente ==========");
 		
 		Cliente cliente = new Cliente();
-		cliente.setId(1L);
 		
 		System.out.println("Informe o nome: ");
 		String nome = scanner.nextLine();
@@ -59,8 +59,12 @@ public class Main {
 		String endereco = scanner.nextLine();
 		cliente.setEndereco(endereco);
 		
+		ClienteDAO dao = new ClienteDAO();
+		cliente = dao.salvar(cliente);
+		
 		System.out.println();
 		System.out.println("Cliente cadastrado: ");
+		System.out.println("Id: " + cliente.getId());
 		System.out.println("Nome: " + cliente.getNome());
 		System.out.println("CPF: " + cliente.getCpf());
 		System.out.println("Data de nascimento: " + cliente.getDataDeNascimento());
