@@ -2,6 +2,7 @@ package br.gov.prodegem.projetodesk;
 
 import java.util.Scanner;
 
+import br.gov.prodegem.projetodesk.controle.ClienteControle;
 import br.gov.prodegem.projetodesk.entidades.Cliente;
 import br.gov.prodegem.projetodesk.persistencia.ClienteDAO;
 
@@ -85,8 +86,11 @@ public class Main {
 		String endereco = scanner.nextLine();
 		cliente.setEndereco(endereco);
 		
-		ClienteDAO dao = new ClienteDAO();
-		cliente = dao.salvar(cliente);
+//		ClienteDAO dao = new ClienteDAO();
+//		cliente = dao.salvar(cliente);
+		
+		ClienteControle controle = new ClienteControle();
+		cliente = controle.salvar(cliente);
 		
 		System.out.println("Id: " + cliente.getId());
 	}
