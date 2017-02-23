@@ -19,7 +19,7 @@ public class Main {
 			System.out.println("=              4 - Devolução de Carro               =");
 			System.out.println("=              5 - Sair                             =");
 			System.out.println("+===================================================+");
-			System.out.println("+===== Informe a opção: ");			
+			System.out.println("Informe a opção: ");			
 			
  	        opcao = scanner.nextLine(); 	        
  	        
@@ -49,7 +49,7 @@ public class Main {
 			System.out.println("=              4 - Excluir Cliente                  =");
 			System.out.println("=              5 - Voltar                           =");
 			System.out.println("+===================================================+");
-			System.out.println("+===== Informe a opção: ");			
+			System.out.println("Informe a opção: ");			
 			
  	        opcao = scanner.nextLine(); 	        
  	        
@@ -89,6 +89,7 @@ public class Main {
 		cliente = controle.salvar(cliente);
 		
 		System.out.println("Id: " + cliente.getId());
+		System.out.println();
 	}
 	
 	private static void atualizarCliente() {
@@ -116,6 +117,9 @@ public class Main {
 		cliente.setEndereco(endereco);
 		
 		cliente = controle.atualizar(cliente);
+		
+		System.out.println("Id: " + cliente.getId());
+		System.out.println();
 	}
 	
 	private static void pesquisarCliente() {
@@ -134,6 +138,8 @@ public class Main {
 		} else {
 			System.out.println("Cliente não encontrado!");
 		}
+		
+		System.out.println();
 	}
 	
 	private static void excluirCliente() {
@@ -142,6 +148,8 @@ public class Main {
 
 		ClienteControle controle = new ClienteControle();
 		controle.excluir(id);
+		
+		System.out.println();
 	}
 
 }	
