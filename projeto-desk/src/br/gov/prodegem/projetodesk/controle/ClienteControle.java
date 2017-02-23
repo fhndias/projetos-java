@@ -25,4 +25,10 @@ public class ClienteControle {
 		
 		return cliente;
 	}
+	
+	
+	public void excluir(String id) {
+		ClienteDAO dao = new ClienteDAO();
+		dao.excluir(id);
+	}
 }
