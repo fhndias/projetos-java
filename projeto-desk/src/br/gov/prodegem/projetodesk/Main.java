@@ -151,5 +151,9 @@ public class Main {
 		
 		System.out.println();
 	}
+	
+	private void teste() {
+		
+	}
 
 }	
